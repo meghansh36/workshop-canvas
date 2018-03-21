@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>my first page</title>
+
+        <style>
+            .blue{
+                color: blue;
+                /* width: 300px;
+                padding: 20px;
+                margin: 50px;
+                border: 2px black dotted; */
+            }
+            .red{
+                color: red;
+            }
+            .green{
+                color: green;
+            }
+
+            .black, .blue, .red, .green{
+                font-size: 30px;
+                
+            }
+
+            .first_div{
+                width: 300px;
+            }
+
+
+
+            /* body{
+                background-color: grey;
+            } */
+        </style>
+    </head>
+    <body>
+         <h1>this is my first heading</h1>
+        <h2>this is my second heading</h2>
+        <h4>this is fourth heading</h4>
+        <h6>this is sixth heading</h6>
+
+        <p>this is a paragraph tag</p>
+
+        <a href="https://google.com">this link will redirect to google.com</a>
+
+        <p><strong>this text is bold</strong></p>
+        <p><em>this test is italics</em></p>
+
+        <p><strong><em>this is both bold and italics</em></strong></p>
+
+        <img src="logo.png" alt="this is google logo">
+
+        <div class="first_div">
+        <p class="black">this text is black</p>
+        <p class="blue">this tag is not clicked</p>
+        <p class="red">this text is red</p>
+        <p class="green">this text is green</p>
+        </div> 
+
+        <button>CLICK</button>
+
+        
+        <!-- JAVASCRIPT CODE BEGINS HERE -->
+        <script>
+            //PRINT STATEMENTS
+
+            //alert('hello world')
+            //document.write('hello world')
+            // console.log('hello world')
+
+            //VARIABLE DECLARATIONS
+
+            // var name = 'name';
+            // var number = 40;
+            // var decimal = 3.55;
+            // var bool = true;
+            // var s1 = '11'
+            // var s2 = 'monday'
+            // alert(s1+number) // '11' + '40'
+
+            //CONDITIONAL STATEMENTS
+
+            // var s1 = '11'
+            // var n1 = 11
+            // if(s1 === n1){ //'11' === 11
+            //     alert('ok')
+            // }else{
+            //     alert('not ok')
+            // }
+
+            // ARRAY DECLARATIONS 
+
+            // var array = [[1,2,3],[4,5,6],[7,8,9]];
+            // var array= [1,2,3,4,5,6]
+            // array.push('kjuhkj')
+            // array.reverse();
+            // var array2 = array.slice(0,3)
+            // var newarray = array.splice(1,3)
+            // alert(newarray)
+            // alert(array)
+
+            //LOOPS
+
+            // for(var i=0 ; i<array.length; i++)
+            // {
+            //     console.log(array[i])
+            // }
+
+            // for(var i in array) //for-in loop
+            // {
+            //     console.log(array[i])
+            // }
+
+            //FUNCTIONS
+
+            // function add(a,b){
+            //     return a+b
+            // }
+
+            // var value = add(10,13)
+
+            // function subtract(a,b){
+            //     return a-b
+            // }
+            // alert(subtract(20,10))
+
+            // var add = function(a,b){  //declaring functions as variables
+            //     return a+b
+            // }
+
+            // alert(add(10,35))
+
+            //OBJECT LITERAL NOTATION
+
+            // var employee = {
+            //     name: 'mark',
+            //     address: 'delhi',
+            //     age: 40,
+            //     salary: 12000,
+            //     getname: function(){
+            //         return this
+            //     }
+            // };
+            
+            // var employee2 = Object.assign({},employee); //copying object
+            // employee2.name = 'hgff'
+            // console.log(employee.getname())
+            // console.log(employee2.getname())
+
+            //CONSTRUCTOR PATTERN(FOR CREATING CLASSES)    
+
+            // function employee(name,age,salary){
+            //     this.name = name;
+            //     this.age = age;
+            //     this.salary = salary;
+            // }
+
+            // var emp1 = new employee('mark', 40, 12000)
+            // var emp2 = new employee('ajay', 24, 35000)
+            // alert(emp1)
+            // console.log(emp2)
+
+            // var array = [
+            //     {
+            //         name: 'mark',
+            //         age: 20
+            //     },
+            //     {
+            //         name: 'henry',
+            //         age: 21
+            //     },
+            //     {
+            //         name: 'frank',
+            //         age: 40
+            //     }
+            // ]
+
+            // console.log(array)
+
+
+            var p1 = document.querySelector('.blue')
+            var p2 = document.querySelector('.red')
+             console.log(p1)
+
+                function to_happen(event){
+                    this.innerHTML = 'this tag is clicked'
+                    console.log(event.clientX)
+
+                }
+            p1.addEventListener('click', to_happen)
+            p2.addEventListener('click',to_happen)
+            
+
+            //END
+        </script>
+    </body>
+</html>
